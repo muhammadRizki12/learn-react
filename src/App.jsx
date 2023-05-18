@@ -21,8 +21,7 @@ export default function App() {
                         handleClick();
                         handleClick();
                         handleClick();
-                    }}
-                >
+                    }}>
                     +3
                 </Button>
             </div>

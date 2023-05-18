@@ -1,17 +1,13 @@
-function Card({ children, title, footer }) {
-    return (
-        <div className='shadow'>
-            <h1 className='text-2xl font-semibold'>{title}</h1>
-
-            <div className='leading-relaxed'>{children}</div>
-
-            <div className='bg-slate-50'>{footer}</div>
-        </div>
-    );
+function Card({ children }) {
+    return <div className='shadow rounded-lg overflow-hidden bg-white'>{children}</div>;
 }
 
 function Title({ children }) {
-    return <h1 className='text-2xl p-4'>{children}</h1>;
+    return (
+        <div className='p-4 border-b'>
+            <h1 className='text-2xl'>{children}</h1>
+        </div>
+    );
 }
 
 function Footer({ children }) {
@@ -26,4 +22,5 @@ Card.Title = Title;
 Card.Footer = Footer;
 Card.Body = Body;
 
+// function Body({ children }) {}
 export default Card;
